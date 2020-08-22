@@ -86,7 +86,7 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgb(51, 49, 49);
+    background-color: rgb(97, 97, 97);
 }
 
 .section-header {
@@ -156,6 +156,11 @@ ul {
     font-size: 2em;
 }
 
+.card-subheading {
+    font-weight: 800;
+    font-size: 1em;
+}
+
 .card-text {
     font-weight: 500;
 }
@@ -186,9 +191,8 @@ ul {
 }
 
 .box {
-    border-radius: 10px;
     background-color: aliceblue;
-    border: 6px dashed rgba(255, 2, 2, 0.513);
+    border: 6px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,6 +201,7 @@ ul {
 }
 
 textarea {
-    width: 100%;
-    height: fit-content;
+    resize: none;
+    padding: 5px;
+    margin: 10px;
 }

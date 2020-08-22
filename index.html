@@ -46,39 +46,39 @@
 
                 <div class="card-content">
                     <div='content-wrapper'>
-                        <div class="card-heading"> Topic </div>
+                        <div class="card-heading"> Borders </div>
+                        <br>
+                        <div class="card-subheading">border</div>
                         <p class="card-text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque expedita magni quod cupiditate omnis earum totam dolore quisquam veritatis ex hic, accusamus pariatur vel commodi eveniet, qui asperiores neque nihil!
+                            CSS Borders allow developers to style their elements very easily.
+                            <pre><code class="language-css">border: 5px solid red;</code></pre> The <code> border </code> property is a shorthand property for: <code> border-width border-style (required) border-color. </code> <br> If border-color is omitted,
+                            the color applied will be the color of the text.
+                            <br> Diffferent border-styles are : <code>  solid, dashed, double , groove, ridge, inset , outset, dotted </code>
                         </p>
 
+                        <div class="card-subheading">border-radius</div>
+                        <p class="card-text">
+                            The border-radius property defines the radius of the element's corners.
+                            <br> Tip: This property allows you to add rounded corners to elements!
+
+                            <pre> <code class="language-css">border-radius: 15px 50px 30px 5px; 
+            // top-left top-right bottom-right bottom-left</code></pre>
+                        </p>
+
+                        <p class="card-text">
+                            Try to modify how box1 looks by writing code in the textarea, add a red dashed border of size 2px, and changer the border radius to 20px
+                        </p>
 
                         <div class="demo-code">
-                                <pre><code class="language-css">
-                body {
-                    background-color: lightblue;
-                }
-                                </code></pre>
-                                <br>
-                        </div>
-
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-
-                          <div class="demo-code">
 
                             <div class="code">
                                 .box1 {
                                 <br>
-                                <textarea spellcheck="false" name="code1" id="code1"></textarea> <br> }
+                                <textarea name="code1" id="code1" cols="40" rows="10" spellcheck="false"></textarea>
+                                <br> }
                             </div>
                             <div class="output">
-                                <div class="box" id="output1">BOX</div>
+                                <div class="box" id="output1"> BOX 1</div>
                             </div>
                         </div>
 
