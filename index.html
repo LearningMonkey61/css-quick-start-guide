@@ -38,6 +38,62 @@
                         1
                     </div>
                     <div class="play-button number">
+                        <i class="fa fa-play" onclick="runCSS('code3','output3')"></i>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div='content-wrapper'>
+                        <div class="card-heading"> Padding</div>
+                        <br>
+                        <div class="card-subheading"> padding </div>
+                        <p class="card-text">
+                            CSS Padding property defines the space between the element content and the element border. <br> Top, bottom, left and right padding can be changed independently using separate properties. You can also change all properties
+                            at once by using shorthand padding property.
+                            <br>
+                            <br>
+                            <code>padding</code> It is used to set all the padding properties in one declaration. <br>
+                            <code>padding-left</code> It is used to set left padding of an element. <br>
+                            <code>padding-right</code> It is used to set right padding of an element. <br>
+                            <code>padding-top</code> It is used to set top padding of an element. <br>
+                            <code>padding-bottom</code> It is used to set bottom padding of an element. <br> You can either use length fixed padding in pt, px, em etc, or you can use %, which defines padding in % of containing element.
+                            <pre><code class="language-css">
+ .box{ 
+     border : 1px solid black; 
+     padding-top: 50px ; 
+     padding-right: 100px; 
+     padding-bottom: 150px; 
+     padding-left: 200px;
+ }
+                            </code></pre>
+                        </p>
+
+
+                        <p class="card-text">
+                            Try to modify the shown box's padding
+                        </p>
+
+                        <div class="demo-code">
+
+                            <div class="code">
+                                .box1 {
+                                <br>
+                                <textarea name="code1" id="code3" cols="40" rows="10" spellcheck="false"></textarea>
+                                <br> }
+                            </div>
+                            <div class="output">
+                                <div class="box" id="output3"> 0000000 </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="number-holder">
+                    <div class="number">
+                        2
+                    </div>
+                    <div class="play-button number">
                         <i class="fa fa-play" onclick="runCSS('code1','output1')"></i>
                     </div>
                 </div>
@@ -85,75 +141,75 @@
             <div class="card">
                 <div class="number-holder">
                     <div class="number">
-                        2
+                        3
                     </div>
                     <div class="play-button number">
                         <i class="fa fa-play" onclick="runCSS('code2','output2')"></i>
                     </div>
                 </div>
                 <div class="card-content">
-                    <div='content-wrapper'>
-                        <div class="card-heading"> Text </div>
-                        <br>
-                        <div class="card-subheading">color</div>
-                        <p class="card-text">
-                            The <code>color</code> property is used to set the color of the text. The color is specified by: a color name - like 'red' , a HEX value like '#ff000', an RGB value - like rgb(255,0,0)
-                            <pre><code class="language-css">body {color: blue;}          h1 {color: green;}</code></pre> The <code> border </code> property is a shorthand property for: <code> border-width border-style (required) border-color. </code>                            <br> If border-color is omitted, the color applied will be the color of the text.
-                            <br> Diffferent border-styles are : <code>  solid, dashed, double , groove, ridge, inset , outset, dotted </code>
-                        </p>
 
-                        <div class="card-subheading">text-align</div>
-                        <p class="card-text">
-                            The <code> direction</code> and <code>unicode-bidi</code>properties can be used to change the text direction of an element:
-                            <pre><code class="language-css">
+                    <div class="card-heading"> Text </div>
+                    <br>
+                    <div class="card-subheading">color</div>
+                    <p class="card-text">
+                        The <code>color</code> property is used to set the color of the text. The color is specified by: a color name - like 'red' , a HEX value like '#ff000', an RGB value - like rgb(255,0,0)
+                        <pre><code class="language-css">body {color: blue;}          h1 {color: green;}</code></pre> The <code> border </code> property is a shorthand property for: <code> border-width border-style (required) border-color. </code> <br>                        If border-color is omitted, the color applied will be the color of the text.
+                        <br> Diffferent border-styles are : <code>  solid, dashed, double , groove, ridge, inset , outset, dotted </code>
+                    </p>
+
+                    <div class="card-subheading">text-align</div>
+                    <p class="card-text">
+                        The <code> direction</code> and <code>unicode-bidi</code>properties can be used to change the text direction of an element:
+                        <pre><code class="language-css">
  div {
      text-align: justify;
    }
                             </code></pre>
 
-                        </p>
+                    </p>
 
 
 
-                        <div class="card-subheading">direction</div>
-                        <p class="card-text">
-                            The text-align property is used to set the horizontal alignment of a text. A text can be left or right aligned, centered, or justified. The following example shows center aligned, and left and right aligned text (left alignment is default if text direction
-                            is left-to-right, and right alignment is default if text direction is right-to-left):
-                        </p>
-                        <pre><code class="language-css">
+                    <div class="card-subheading">direction</div>
+                    <p class="card-text">
+                        The text-align property is used to set the horizontal alignment of a text. A text can be left or right aligned, centered, or justified. The following example shows center aligned, and left and right aligned text (left alignment is default if text direction
+                        is left-to-right, and right alignment is default if text direction is right-to-left):
+                    </p>
+                    <pre><code class="language-css">
   p {
     direction: rtl;
     unicode-bidi: bidi-override;
     }
                         </code></pre>
 
-                        <div class="card-subheading">text-decoration</div>
-                        <p class="card-text">
-                            The <code>text-decoration</code> property is used to set or remove decorations from text. The value <code>text-decoration: none;</code> is often used to remove underlines from links:
-                            <pre><code class="language-css">
+                    <div class="card-subheading">text-decoration</div>
+                    <p class="card-text">
+                        The <code>text-decoration</code> property is used to set or remove decorations from text. The value <code>text-decoration: none;</code> is often used to remove underlines from links:
+                        <pre><code class="language-css">
  h1 {
      text-decoration: overline // line-through , underline ;
    }
                             </code></pre>
-                        </p>
+                    </p>
 
-                        <div class="card-subheading">text-transform</div>
-                        <p class="card-text">
-                            The <code>text-transform </code> property is used to specify uppercase and lowercase letters in a text. It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word:
-                            <pre><code class="language-css">
+                    <div class="card-subheading">text-transform</div>
+                    <p class="card-text">
+                        The <code>text-transform </code> property is used to specify uppercase and lowercase letters in a text. It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word:
+                        <pre><code class="language-css">
 p.uppercase {
     text-transform: uppercase // lowercase , capitalise;
   }
                             </code></pre>
-                        </p>
+                    </p>
 
-                        <div class="card-subheading">letter-spacing</div>
-                        <p class="card-text">
-                            The <code>text-indent</code> property is used to specify the indentation of the first line of a text. <br> The <code> letter-spacing </code> property is used to specify the space between the characters in a text. <br> The <code> line-height </code>                            property is used to specify the space between lines. <br> The <code> word-spacing </code> property is used to specify the space between the words in a text. <br> The <code> white-space </code> property specifies how white-space
-                            inside an element is handled.
+                    <div class="card-subheading">letter-spacing</div>
+                    <p class="card-text">
+                        The <code>text-indent</code> property is used to specify the indentation of the first line of a text. <br> The <code> letter-spacing </code> property is used to specify the space between the characters in a text. <br> The <code> line-height </code>                        property is used to specify the space between lines. <br> The <code> word-spacing </code> property is used to specify the space between the words in a text. <br> The <code> white-space </code> property specifies how white-space
+                        inside an element is handled.
 
 
-                            <pre><code class="language-css">
+                        <pre><code class="language-css">
 p {
     text-indent: 50px;
     letter-spacing: 3px;
@@ -162,42 +218,156 @@ p {
     white-space: nowrap;
   }
                             </code></pre>
-                        </p>
+                    </p>
 
-                        <div class="card-subheading">text-shadow</div>
-                        <p class="card-text">
-                            The <code>text-shadow</code> property adds shadow to text.
+                    <div class="card-subheading">text-shadow</div>
+                    <p class="card-text">
+                        The <code>text-shadow</code> property adds shadow to text.
 
-                            <pre><code class="language-css">
+                        <pre><code class="language-css">
 h1 {
     text-shadow: 2px 2px 5px red; // horizontal vertical shadow-color blur-value
   }
                             </code></pre>
-                        </p>
+                    </p>
 
 
-                        <p class="card-text">
-                            Try to modify the text in the div so that the resulting text has blue text-color and red shadow, giving a 3d glass look!
-                        </p>
+                    <p class="card-text">
+                        Try to modify the text in the div so that the resulting text has blue text-color and red shadow, giving a 3d glass look!
+                    </p>
 
-                        <div class="demo-code">
+                    <div class="demo-code">
 
-                            <div class="code">
-                                .textdiv {
-                                <br>
-                                <textarea name="code2" id="code2" cols="40" rows="10" spellcheck="false"></textarea>
-                                <br> }
-                            </div>
-                            <div class="output">
-                                <p class="box" style="width: 200px ; padding: 10px; border: none;" id="output2"> Some Text to be modified, and styled, a random para which is not loreem ipsum. Sad Business Really </p>
-                            </div>
+                        <div class="code">
+                            .textdiv {
+                            <br>
+                            <textarea name="code2" id="code2" cols="40" rows="10" spellcheck="false"></textarea>
+                            <br> }
                         </div>
+                        <div class="output">
+                            <p class="box" style="width: 200px ; padding: 10px; border: none;" id="output2"> Some Text to be modified, and styled, a random para which is not loreem ipsum. Sad Business Really </p>
+                        </div>
+                    </div>
 
                 </div>
             </div>
 
-        </div>
+            <div class="card">
+                <div class="number-holder">
+                    <div class="number">
+                        4
+                    </div>
+                    <div class="play-button number">
+                        <i class="fa fa-play" onclick="runCSS('code4','output4')"></i>
+                    </div>
+                </div>
+                <div class="card-content">
 
+                    <div class="card-heading"> Borders </div>
+                    <br>
+                    <div class="card-subheading">height</div>
+                    <p class="card-text">
+                        This CSS property sets the height of an element. It is used to set the height of content area of an element.
+                        <br> It does not include padding borders or margins, whereas it sets the height of the area inside the padding, border, and margin of the element. It can accept the length and percentage values. But it does not allow negative values.
+                        <br> If we set the height to a numeric value (like in px, %, etc.), the content can be overflow if it does not fit in the given height. We can manage the overflowing content by defining the overflow property. If the height of the
+                        container is not explicitly defined, and the element is not absolutely positioned (i.e., position: absolute;), the value of height property is set to auto. The min-height and max-height properties can also be used to control the
+                        size. It can have the following values : <br>
+                        <code>auto</code> It is a default value. Using this value browser is responsible for calculating the height of the element. Negative values are not allowed. <br>
+                        <code>length</code> It specifies the height of an element using the length units such as px, cm, pt, etc. Negative values are not allowed. <br>
+                        <code>%</code> It defines the height of the container in %. Negative values are not allowed. <br>
+                        <code>initial</code> It is used to set the property to its default value. <br>
+                        <code>inherit</code> It is used to inherit the property from its parent element. <br>
+                    </p>
+
+                    <div class="card-subheading">width</div>
+                    <p class="card-text">
+                        he CSS width property is used to set the width of the content area of an element. <br> It does not include padding borders or margins. It sets width of the area inside the padding, border, and margin of the element.
+
+                        <pre> <code class="language-css">
+.SomeRandomClass {
+    height : 10em ; 
+    width : max-content ;
+}
+                        </code></pre>
+                    </p>
+
+                    <p class="card-text">
+                        Try to modify the height and the width of box1
+                    </p>
+
+                    <div class="demo-code">
+
+                        <div class="code">
+                            .box1 {
+                            <br>
+                            <textarea name="code1" id="code4" cols="40" rows="10" spellcheck="false"></textarea>
+                            <br> }
+                        </div>
+                        <div class="output">
+                            <div class="box" id="output4"> BOX 1</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="number-holder">
+                    <div class="number">
+                        5
+                    </div>
+                    <div class="play-button number">
+                        <i class="fa fa-play" onclick="runCSS('code5','output5')"></i>
+                    </div>
+                </div>
+                <div class="card-content">
+
+                    <div class="card-heading"> Font </div>
+                    <br>
+                    <div class="card-subheading"> font </div>
+                    <p class="card-text">
+                        CSS Font property is used to control the look of texts. <br> By the use of CSS font property you can change the text size, color, style and more. You have already studied how to make text bold or underlined. Here, you will also
+                        know how to resize your font using percentage. These are some important font attributes:
+                        <br> <br>
+                        <code>font-color </code>: This property is used to change the color of the text. (standalone attribute) <br>
+                        <code>font-family </code>: This property is used to change the face of the font. <br>
+                        <code>font-size </code>: This property is used to increase or decrease the size of the font. <br>
+                        <code>font-style </code>: This property is used to make the font bold, italic or oblique. <br>
+                        <code>font-variant </code>: This property creates a small-caps effect. <br>
+                        <code>font-weight </code>: This property is used to increase or decrease the boldness and lightness of the font <br>
+                        <pre><code class="language-css">.AnotherRandomClass {
+            font-color   : red ; 
+            font-family : Verdana ; 
+            font-size : 10vh ; 
+            font-style : italic ;  
+            font-weight : 200 ; 
+            }    </code></pre>
+
+
+                    </p>
+
+                    <p class="card-text">
+                        Try to modify the Font properties of text inside the box
+                    </p>
+
+                    <div class="demo-code">
+
+                        <div class="code">
+                            .text {
+                            <br>
+                            <textarea name="code1" id="code5" cols="40" rows="10" spellcheck="false"></textarea>
+                            <br> }
+                        </div>
+                        <div class="output">
+                            <div class="box" id="output5" style="height: max-content; width: max-content;"> Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Eveniet, ex vel. Vitae delectus libero </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
 
 
     </div>
