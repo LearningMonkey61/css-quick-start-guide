@@ -30,11 +30,9 @@
             </nav>
         </div>
 
-
         <div class="main">
 
             <div class="card">
-
                 <div class="number-holder">
                     <div class="number">
                         1
@@ -43,7 +41,6 @@
                         <i class="fa fa-play" onclick="runCSS('code1','output1')"></i>
                     </div>
                 </div>
-
                 <div class="card-content">
                     <div='content-wrapper'>
                         <div class="card-heading"> Borders </div>
@@ -62,7 +59,7 @@
                             <br> Tip: This property allows you to add rounded corners to elements!
 
                             <pre> <code class="language-css">border-radius: 15px 50px 30px 5px; 
-            // top-left top-right bottom-right bottom-left</code></pre>
+             // top-left top-right bottom-right bottom-left</code></pre>
                         </p>
 
                         <p class="card-text">
@@ -84,10 +81,127 @@
 
                 </div>
             </div>
+
+            <div class="card">
+                <div class="number-holder">
+                    <div class="number">
+                        2
+                    </div>
+                    <div class="play-button number">
+                        <i class="fa fa-play" onclick="runCSS('code2','output2')"></i>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div='content-wrapper'>
+                        <div class="card-heading"> Text </div>
+                        <br>
+                        <div class="card-subheading">color</div>
+                        <p class="card-text">
+                            The <code>color</code> property is used to set the color of the text. The color is specified by: a color name - like 'red' , a HEX value like '#ff000', an RGB value - like rgb(255,0,0)
+                            <pre><code class="language-css">body {color: blue;}          h1 {color: green;}</code></pre> The <code> border </code> property is a shorthand property for: <code> border-width border-style (required) border-color. </code>                            <br> If border-color is omitted, the color applied will be the color of the text.
+                            <br> Diffferent border-styles are : <code>  solid, dashed, double , groove, ridge, inset , outset, dotted </code>
+                        </p>
+
+                        <div class="card-subheading">text-align</div>
+                        <p class="card-text">
+                            The <code> direction</code> and <code>unicode-bidi</code>properties can be used to change the text direction of an element:
+                            <pre><code class="language-css">
+ div {
+     text-align: justify;
+   }
+                            </code></pre>
+
+                        </p>
+
+
+
+                        <div class="card-subheading">direction</div>
+                        <p class="card-text">
+                            The text-align property is used to set the horizontal alignment of a text. A text can be left or right aligned, centered, or justified. The following example shows center aligned, and left and right aligned text (left alignment is default if text direction
+                            is left-to-right, and right alignment is default if text direction is right-to-left):
+                        </p>
+                        <pre><code class="language-css">
+  p {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    }
+                        </code></pre>
+
+                        <div class="card-subheading">text-decoration</div>
+                        <p class="card-text">
+                            The <code>text-decoration</code> property is used to set or remove decorations from text. The value <code>text-decoration: none;</code> is often used to remove underlines from links:
+                            <pre><code class="language-css">
+ h1 {
+     text-decoration: overline // line-through , underline ;
+   }
+                            </code></pre>
+                        </p>
+
+                        <div class="card-subheading">text-transform</div>
+                        <p class="card-text">
+                            The <code>text-transform </code> property is used to specify uppercase and lowercase letters in a text. It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word:
+                            <pre><code class="language-css">
+p.uppercase {
+    text-transform: uppercase // lowercase , capitalise;
+  }
+                            </code></pre>
+                        </p>
+
+                        <div class="card-subheading">letter-spacing</div>
+                        <p class="card-text">
+                            The <code>text-indent</code> property is used to specify the indentation of the first line of a text. <br> The <code> letter-spacing </code> property is used to specify the space between the characters in a text. <br> The <code> line-height </code>                            property is used to specify the space between lines. <br> The <code> word-spacing </code> property is used to specify the space between the words in a text. <br> The <code> white-space </code> property specifies how white-space
+                            inside an element is handled.
+
+
+                            <pre><code class="language-css">
+p {
+    text-indent: 50px;
+    letter-spacing: 3px;
+    line-height: 0.8;
+    word-spacing: 10px;
+    white-space: nowrap;
+  }
+                            </code></pre>
+                        </p>
+
+                        <div class="card-subheading">text-shadow</div>
+                        <p class="card-text">
+                            The <code>text-shadow</code> property adds shadow to text.
+
+                            <pre><code class="language-css">
+h1 {
+    text-shadow: 2px 2px 5px red; // horizontal vertical shadow-color blur-value
+  }
+                            </code></pre>
+                        </p>
+
+
+                        <p class="card-text">
+                            Try to modify the text in the div so that the resulting text has blue text-color and red shadow, giving a 3d glass look!
+                        </p>
+
+                        <div class="demo-code">
+
+                            <div class="code">
+                                .textdiv {
+                                <br>
+                                <textarea name="code2" id="code2" cols="40" rows="10" spellcheck="false"></textarea>
+                                <br> }
+                            </div>
+                            <div class="output">
+                                <p class="box" style="width: 200px ; padding: 10px; border: none;" id="output2"> Some Text to be modified, and styled, a random para which is not loreem ipsum. Sad Business Really </p>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+
         </div>
 
+
+
     </div>
-    </div>
+
 </body>
 
 </html>

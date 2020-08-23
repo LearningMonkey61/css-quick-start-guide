@@ -205,3 +205,10 @@ textarea {
     padding: 5px;
     margin: 10px;
 }
+
+code {
+    background-color: black;
+    color: yellow;
+    margin: 2px;
+    padding: 3px;
+}
