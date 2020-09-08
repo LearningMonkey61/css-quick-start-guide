@@ -1,8 +1,14 @@
 function runCSS(codeFrom, toApply) {
+     const re = new RegExp('^((\{)|(\}))+','g'); 
+
     const text = document.getElementById(codeFrom);
     const output = document.getElementById(toApply);
     var code = "{" + text.value + "}";
 
+    if(text.value.match(re)){
+        alert("CSS CODE INJECTION DETECTED, REMOVE { or } FROM THE CODE_AREA") ; 
+        return 
+    }
 
     var SHEET_ID_CHECK = document.getElementById(codeFrom + toApply + '-style');
 
